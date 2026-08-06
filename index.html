@@ -51,10 +51,9 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Building organisations and leadership teams that scale performance.</h1>
+                <h1>Translating growth ambition into execution strength.</h1>
                 <div class="hero-divider"></div>
-                <p>We partner with PE-backed, founder-led, and scaling businesses, strengthening execution through
-                    organisation systems, leadership effectiveness, governance, and operating effectiveness.</p>
+                <p>We help PE-backed, founder-led, and scaling businesses turn strategy into results by strengthening accountability, decision-making, leadership effectiveness, governance, and ways of working.</p>
                 <div class="hero-buttons" style="display: flex; gap: 15px; flex-wrap: wrap;">
                     <div class="dropdown" style="position: relative; display: inline-block;">
                         <a href="#" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 8px;">Explore Our Services <i
@@ -273,12 +272,11 @@
 
 
 
-    <!-- SECTION 3: OUR APPROACH -->
+    <!-- SECTION 3: WHAT WE STRENGTHEN -->
     <section class="values">
         <div class="container text-center">
             <span
-                style="color: var(--accent-gold); font-weight: 700; text-transform: uppercase; letter-spacing: 2px; font-size: 0.95rem; display: block; margin-bottom: 15px;">OUR
-                APPROACH</span>
+                style="color: var(--accent-gold); font-weight: 700; text-transform: uppercase; letter-spacing: 2px; font-size: 0.95rem; display: block; margin-bottom: 15px;">WHAT WE STRENGTHEN</span>
             <h2 class="section-title text-center" style="color: #ffffff;">How organisations function determines how
                 effectively they scale.</h2>
             <p style="color: #ffffff; max-width: 1080px; margin: 0 auto 20px; text-align: center; font-size: 1.15rem;">
@@ -459,7 +457,7 @@
                 <!-- Card 1 -->
                 <div class="animate-on-scroll changes-card">
                     <div class="number-container">01</div>
-                    <p>Decisions move to the right level, so leaders are no longer the bottleneck</p>
+                    <p>Decision-making shifts closer to where clarity and action are needed.</p>
                 </div>
                 <!-- Card 2 -->
                 <div class="animate-on-scroll changes-card">
@@ -569,6 +567,65 @@
                 grid-template-columns: 1fr !important;
             }
         }
+        @media (max-width: 600px) {
+            .why-slider-container {
+                display: flex;
+                align-items: center;
+                position: relative;
+                padding: 0 45px;
+                width: 100%;
+            }
+            .why-slider-arrow {
+                display: flex !important;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background: #ffffff;
+                border: 1px solid rgba(191, 183, 129, 0.45);
+                align-items: center;
+                justify-content: center;
+                color: var(--primary-color);
+                box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+                z-index: 10;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                padding: 0;
+            }
+            .why-slider-arrow:active {
+                background: #FAF8F5;
+            }
+            .why-slider-arrow.prev {
+                left: 0;
+            }
+            .why-slider-arrow.next {
+                right: 0;
+            }
+            .why-slider-track-wrapper {
+                overflow: hidden;
+                width: 100%;
+            }
+            .why-slider-track {
+                display: flex !important;
+                flex-direction: row !important;
+                flex-wrap: nowrap !important;
+                transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+                gap: 20px !important;
+                width: 100% !important;
+            }
+            .why-slider-track .card {
+                width: 100% !important;
+                flex-shrink: 0 !important;
+            }
+        }
+        .why-slider-arrow {
+            display: none;
+        }
+        .why-slider-arrow.hidden {
+            display: none !important;
+        }
     </style>
 
     <!-- SECTION 7: WHY Dighe Kulkarni -->
@@ -583,63 +640,67 @@
                     sets our partnership apart.</h2>
             </div>
 
-            <div class="cards-grid-4 why-cards-row"
-                style="gap: 30px; margin-top: 0; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));">
-                <div class="card animate-on-scroll"
-                    style="text-align: left; padding: 35px 28px; background: #ffffff; border-radius: 16px; border: 1px solid rgba(191, 183, 129, 0.45); border-top: 4px solid var(--accent-gold); box-shadow: 0 10px 30px rgba(0,0,0,0.02); display: flex; flex-direction: column;">
-                    <div
-                        style="width: 55px; height: 55px; border-radius: 50%; background: rgba(191, 183, 129, 0.15); display: flex; align-items: center; justify-content: center; margin-bottom: 24px; color: var(--primary-color); overflow: hidden; padding: 10px;">
-                        <img src="images/Enterprisegrade thinking.png" alt="Enterprise-grade thinking Logo"
-                            style="width: 100%; height: 100%; object-fit: contain;">
+            <div class="why-slider-container">
+                <button class="why-slider-arrow prev" id="whyPrevBtn" onclick="prevWhySlide()" aria-label="Previous slide"><i class="fa-solid fa-chevron-left"></i></button>
+                <div class="why-slider-track-wrapper">
+                    <div class="cards-grid-4 why-cards-row why-slider-track" id="whySliderTrack"
+                        style="gap: 30px; margin-top: 0; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));">
+                        <div class="card animate-on-scroll"
+                            style="text-align: left; padding: 35px 28px; background: #ffffff; border-radius: 16px; border: 1px solid rgba(191, 183, 129, 0.45); border-top: 4px solid var(--accent-gold); box-shadow: 0 10px 30px rgba(0,0,0,0.02); display: flex; flex-direction: column;">
+                            <div
+                                style="width: 55px; height: 55px; border-radius: 50%; background: rgba(191, 183, 129, 0.15); display: flex; align-items: center; justify-content: center; margin-bottom: 24px; color: var(--primary-color); overflow: hidden; padding: 10px;">
+                                <img src="images/Enterprisegrade thinking.png" alt="Enterprise-grade thinking Logo"
+                                    style="width: 100%; height: 100%; object-fit: contain;">
+                            </div>
+                            <h3
+                                style="font-size: 1.3rem; color: var(--primary-color); margin-bottom: 12px; font-weight: 700; line-height: 1.4;">
+                                Enterprise-grade thinking. Practical execution.</h3>
+                            <p style="font-size: 1rem; line-height: 1.6; color: var(--text-dark); margin: 0;">Deep organisation
+                                and leadership transformation expertise, in a focused model built for scaling businesses.</p>
+                        </div>
+                        <div class="card animate-on-scroll"
+                            style="text-align: left; padding: 35px 28px; background: #ffffff; border-radius: 16px; border: 1px solid rgba(191, 183, 129, 0.45); border-top: 4px solid var(--accent-gold); box-shadow: 0 10px 30px rgba(0,0,0,0.02); display: flex; flex-direction: column;">
+                            <div
+                                style="width: 55px; height: 55px; border-radius: 50%; background: rgba(191, 183, 129, 0.15); display: flex; align-items: center; justify-content: center; margin-bottom: 24px; color: var(--primary-color); overflow: hidden; padding: 10px;">
+                                <img src="images/Business first approach.png" alt="Business-first approach Logo"
+                                    style="width: 100%; height: 100%; object-fit: contain;">
+                            </div>
+                            <h3
+                                style="font-size: 1.3rem; color: var(--primary-color); margin-bottom: 12px; font-weight: 700; line-height: 1.4;">
+                                Business-first approach.</h3>
+                            <p style="font-size: 1rem; line-height: 1.6; color: var(--text-dark); margin: 0;">Our focus is the
+                                operational reality: governance, leadership alignment, accountability, and execution outcomes.
+                            </p>
+                        </div>
+                        <div class="card animate-on-scroll"
+                            style="text-align: left; padding: 35px 28px; background: #ffffff; border-radius: 16px; border: 1px solid rgba(191, 183, 129, 0.45); border-top: 4px solid var(--accent-gold); box-shadow: 0 10px 30px rgba(0,0,0,0.02); display: flex; flex-direction: column;">
+                            <div
+                                style="width: 55px; height: 55px; border-radius: 50%; background: rgba(191, 183, 129, 0.15); display: flex; align-items: center; justify-content: center; margin-bottom: 24px; color: var(--primary-color); overflow: hidden; padding: 10px;">
+                                <img src="images/Focused and targeted.png" alt="Focused and targeted Logo"
+                                    style="width: 100%; height: 100%; object-fit: contain;">
+                            </div>
+                            <h3
+                                style="font-size: 1.3rem; color: var(--primary-color); margin-bottom: 12px; font-weight: 700; line-height: 1.4;">
+                                Focused and targeted.</h3>
+                            <p style="font-size: 1rem; line-height: 1.6; color: var(--text-dark); margin: 0;">We identify the constraints that matter most to execution and scale so the work stays precise rather than becoming a broad redesign.</p>
+                        </div>
+                        <div class="card animate-on-scroll"
+                            style="text-align: left; padding: 35px 28px; background: #ffffff; border-radius: 16px; border: 1px solid rgba(191, 183, 129, 0.45); border-top: 4px solid var(--accent-gold); box-shadow: 0 10px 30px rgba(0,0,0,0.02); display: flex; flex-direction: column;">
+                            <div
+                                style="width: 55px; height: 55px; border-radius: 50%; background: rgba(191, 183, 129, 0.15); display: flex; align-items: center; justify-content: center; margin-bottom: 24px; color: var(--primary-color); overflow: hidden; padding: 10px;">
+                                <img src="images/Seniorled engagement.png" alt="Senior-led engagement Logo"
+                                    style="width: 100%; height: 100%; object-fit: contain;">
+                            </div>
+                            <h3
+                                style="font-size: 1.3rem; color: var(--primary-color); margin-bottom: 12px; font-weight: 700; line-height: 1.4;">
+                                Senior-led engagement.</h3>
+                            <p style="font-size: 1rem; line-height: 1.6; color: var(--text-dark); margin: 0;">Clients work
+                                directly with experienced senior practitioners. The people who scope the work are the people who
+                                do it.</p>
+                        </div>
                     </div>
-                    <h3
-                        style="font-size: 1.3rem; color: var(--primary-color); margin-bottom: 12px; font-weight: 700; line-height: 1.4;">
-                        Enterprise-grade thinking. Practical execution.</h3>
-                    <p style="font-size: 1rem; line-height: 1.6; color: var(--text-dark); margin: 0;">Deep organisation
-                        and leadership transformation expertise, in a focused model built for scaling businesses.</p>
                 </div>
-                <div class="card animate-on-scroll"
-                    style="text-align: left; padding: 35px 28px; background: #ffffff; border-radius: 16px; border: 1px solid rgba(191, 183, 129, 0.45); border-top: 4px solid var(--accent-gold); box-shadow: 0 10px 30px rgba(0,0,0,0.02); display: flex; flex-direction: column;">
-                    <div
-                        style="width: 55px; height: 55px; border-radius: 50%; background: rgba(191, 183, 129, 0.15); display: flex; align-items: center; justify-content: center; margin-bottom: 24px; color: var(--primary-color); overflow: hidden; padding: 10px;">
-                        <img src="images/Business first approach.png" alt="Business-first approach Logo"
-                            style="width: 100%; height: 100%; object-fit: contain;">
-                    </div>
-                    <h3
-                        style="font-size: 1.3rem; color: var(--primary-color); margin-bottom: 12px; font-weight: 700; line-height: 1.4;">
-                        Business-first approach.</h3>
-                    <p style="font-size: 1rem; line-height: 1.6; color: var(--text-dark); margin: 0;">Our focus is the
-                        operational reality: governance, leadership alignment, accountability, and execution outcomes.
-                    </p>
-                </div>
-                <div class="card animate-on-scroll"
-                    style="text-align: left; padding: 35px 28px; background: #ffffff; border-radius: 16px; border: 1px solid rgba(191, 183, 129, 0.45); border-top: 4px solid var(--accent-gold); box-shadow: 0 10px 30px rgba(0,0,0,0.02); display: flex; flex-direction: column;">
-                    <div
-                        style="width: 55px; height: 55px; border-radius: 50%; background: rgba(191, 183, 129, 0.15); display: flex; align-items: center; justify-content: center; margin-bottom: 24px; color: var(--primary-color); overflow: hidden; padding: 10px;">
-                        <img src="images/Focused and targeted.png" alt="Focused and targeted Logo"
-                            style="width: 100%; height: 100%; object-fit: contain;">
-                    </div>
-                    <h3
-                        style="font-size: 1.3rem; color: var(--primary-color); margin-bottom: 12px; font-weight: 700; line-height: 1.4;">
-                        Focused and targeted.</h3>
-                    <p style="font-size: 1rem; line-height: 1.6; color: var(--text-dark); margin: 0;">We isolate what
-                        most constrains execution and scale, enabling sharper interventions rather than broad redesign.
-                    </p>
-                </div>
-                <div class="card animate-on-scroll"
-                    style="text-align: left; padding: 35px 28px; background: #ffffff; border-radius: 16px; border: 1px solid rgba(191, 183, 129, 0.45); border-top: 4px solid var(--accent-gold); box-shadow: 0 10px 30px rgba(0,0,0,0.02); display: flex; flex-direction: column;">
-                    <div
-                        style="width: 55px; height: 55px; border-radius: 50%; background: rgba(191, 183, 129, 0.15); display: flex; align-items: center; justify-content: center; margin-bottom: 24px; color: var(--primary-color); overflow: hidden; padding: 10px;">
-                        <img src="images/Seniorled engagement.png" alt="Senior-led engagement Logo"
-                            style="width: 100%; height: 100%; object-fit: contain;">
-                    </div>
-                    <h3
-                        style="font-size: 1.3rem; color: var(--primary-color); margin-bottom: 12px; font-weight: 700; line-height: 1.4;">
-                        Senior-led engagement.</h3>
-                    <p style="font-size: 1rem; line-height: 1.6; color: var(--text-dark); margin: 0;">Clients work
-                        directly with experienced senior practitioners. The people who scope the work are the people who
-                        do it.</p>
-                </div>
+                <button class="why-slider-arrow next" id="whyNextBtn" onclick="nextWhySlide()" aria-label="Next slide"><i class="fa-solid fa-chevron-right"></i></button>
             </div>
         </div>
     </section>
@@ -751,6 +812,61 @@
 
     <!-- JS -->
     <script src="script.js?v=4"></script>
+    <script>
+        let currentWhySlide = 0;
+        function showWhySlide(index) {
+            const track = document.getElementById('whySliderTrack');
+            if (!track) return;
+            const cards = track.querySelectorAll('.card');
+            if (!cards.length) return;
+            
+            // Constrain index to bounds (disable circular looping)
+            if (index >= cards.length) index = cards.length - 1;
+            if (index < 0) index = 0;
+            currentWhySlide = index;
+            
+            track.style.transform = `translateX(calc(-${currentWhySlide} * (100% + 20px)))`;
+            
+            // Toggle visibility classes on arrows
+            const prevBtn = document.getElementById('whyPrevBtn');
+            const nextBtn = document.getElementById('whyNextBtn');
+            if (prevBtn) {
+                if (currentWhySlide === 0) {
+                    prevBtn.classList.add('hidden');
+                } else {
+                    prevBtn.classList.remove('hidden');
+                }
+            }
+            if (nextBtn) {
+                if (currentWhySlide === cards.length - 1) {
+                    nextBtn.classList.add('hidden');
+                } else {
+                    nextBtn.classList.remove('hidden');
+                }
+            }
+        }
+        function nextWhySlide() {
+            showWhySlide(currentWhySlide + 1);
+        }
+        function prevWhySlide() {
+            showWhySlide(currentWhySlide - 1);
+        }
+        
+        // Initialize on load to hide left arrow initially
+        document.addEventListener('DOMContentLoaded', () => {
+            showWhySlide(0);
+        });
+        
+        // Reset transform on resizing if transitioning out of mobile
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 600) {
+                const track = document.getElementById('whySliderTrack');
+                if (track) track.style.transform = 'none';
+            } else {
+                showWhySlide(currentWhySlide);
+            }
+        });
+    </script>
 </body>
 
 </html>

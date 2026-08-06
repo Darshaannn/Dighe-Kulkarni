@@ -77,11 +77,33 @@
                 margin-top: 0 !important;
                 padding: 30px 20px !important;
             }
+            .service-hero {
+                padding: 80px 0 40px !important; /* Shrunk spacing */
+            }
+            #contact-form-anchor {
+                padding: 20px 20px !important; /* Shrunk spacing */
+            }
+            .contact-title {
+                font-size: 2.2rem !important; /* Make title readable on mobile */
+                margin-bottom: 20px !important;
+            }
         }
 
         .contact-form-card {
             margin-top: 110px;
             padding: 35px 40px !important;
+        }
+
+        .contact-title {
+            color: #204650;
+            font-family: 'El Messiri', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 3.2rem;
+            display: block;
+            margin-bottom: 30px;
+            line-height: 1.25;
         }
     </style>
 </head>
@@ -132,7 +154,7 @@
             
             <!-- Left Column: Direct Channels & CTA -->
             <div style="text-align: left;">
-                <span style="color: #204650; font-family: 'El Messiri', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; font-size: 3.2rem; display: block; margin-bottom: 30px;">GET IN TOUCH</span>
+                <span class="contact-title">GET IN TOUCH</span>
                 
                 <!-- Channels List -->
                 <div class="channels-list" style="display: flex; flex-direction: column; margin-bottom: 40px;">
@@ -160,18 +182,7 @@
                         </div>
                     </div>
 
-                    <!-- Contact Form Channel -->
-                    <div style="display: flex; align-items: center; gap: 20px; padding: 25px 0; border-bottom: 1px solid rgba(0,0,0,0.08);">
-                        <div style="width: 48px; height: 48px; border-radius: 50%; background: #F1F5F9; display: flex; align-items: center; justify-content: center; color: var(--primary-color); font-size: 1.2rem; flex-shrink: 0;">
-                            <i class="fa-solid fa-file-lines"></i>
-                        </div>
-                        <div>
-                            <h4 style="font-family: 'Inter', sans-serif; font-size: 1.05rem; font-weight: 700; color: var(--primary-color); margin: 0 0 4px 0;">Contact Form</h4>
-                            <a href="#contact-form-anchor" style="color: var(--text-dark); font-size: 1rem; text-decoration: none; opacity: 0.85; display: inline-flex; align-items: center; gap: 6px;">
-                                Send us a message directly <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem; color: var(--accent-gold);"></i>
-                            </a>
-                        </div>
-                    </div>
+
                 </div>
 
                 <!-- Schedule a Conversation CTA Card -->
