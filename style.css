@@ -4618,3 +4618,10 @@ footer>.container>div:last-child {
         font-size: 1.8rem !important;
     }
 }
+
+@media (max-width: 900px) {
+    .benchmarking-bottom-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
+
