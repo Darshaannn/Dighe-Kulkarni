@@ -16,7 +16,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leadership Impact | DKOA</title>
-    <meta name="description" content="Leadership assessment, development, coaching, and succession planning for organisations navigating growth, transition, and complexity.">
+    <meta name="description"
+        content="Leadership assessment, development, coaching, and succession planning for organisations navigating growth, transition, and complexity.">
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="style.css?v=62">
@@ -45,14 +46,16 @@
             position: relative;
             border-radius: 20px;
             overflow: hidden;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
         }
+
         .overview-img-wrapper img {
             width: 100%;
             height: auto;
             display: block;
             transition: transform 0.5s ease;
         }
+
         .overview-img-wrapper:hover img {
             transform: scale(1.03);
         }
@@ -64,7 +67,7 @@
             padding: 60px 50px;
             position: relative;
             overflow: hidden;
-            box-shadow: 0 20px 50px rgba(21,50,57,0.15);
+            box-shadow: 0 20px 50px rgba(21, 50, 57, 0.15);
             border: 1px solid rgba(191, 183, 129, 0.2);
             display: grid;
             grid-template-columns: 1.25fr 0.75fr;
@@ -119,7 +122,8 @@
             padding: 20px;
         }
 
-        .layer-top, .layer-bottom {
+        .layer-top,
+        .layer-bottom {
             background: rgba(255, 255, 255, 0.08);
             border: 1px solid rgba(255, 255, 255, 0.15);
             backdrop-filter: blur(10px);
@@ -149,6 +153,7 @@
         .layered-visual:hover .layer-top {
             transform: translateY(10px) rotate(0deg);
         }
+
         .layered-visual:hover .layer-bottom {
             transform: translateY(-10px) rotate(0deg);
         }
@@ -160,7 +165,7 @@
             border-radius: 16px;
             background: #ffffff;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
-            border: 1px solid rgba(0,0,0,0.04);
+            border: 1px solid rgba(0, 0, 0, 0.04);
             transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
             display: flex;
             flex-direction: column;
@@ -184,6 +189,7 @@
             align-items: center;
             justify-content: center;
         }
+
         .service-img-container img {
             width: 100%;
             height: 100%;
@@ -191,6 +197,7 @@
             transition: transform 0.5s ease;
             transform: scale(1.15);
         }
+
         .service-card-premium:hover .service-img-container img {
             transform: scale(1.25);
         }
@@ -206,6 +213,7 @@
             box-sizing: border-box;
             transition: background-color 0.4s ease;
         }
+
         .service-content-body h3 {
             font-size: 1.45rem;
             color: #ffffff;
@@ -233,6 +241,7 @@
             z-index: 3;
             border-radius: 16px;
         }
+
         .service-card-premium .hover-overlay p {
             color: #153239;
             font-size: 1.1rem;
@@ -241,31 +250,43 @@
             text-align: center;
             font-weight: 600;
         }
+
         .service-card-premium:hover .hover-overlay {
             opacity: 1;
             transform: translateY(0);
         }
+
         @media (max-width: 1024px) {
-            .overview-grid, .essence-box {
+
+            .overview-grid,
+            .essence-box {
                 grid-template-columns: 1fr;
                 gap: 40px;
                 text-align: center;
             }
+
             .essence-box {
                 padding: 50px 30px;
             }
-            .essence-box h2, .essence-box p, .essence-box span {
+
+            .essence-box h2,
+            .essence-box p,
+            .essence-box span {
                 text-align: center !important;
             }
+
             .bullet-list li {
                 text-align: left;
                 display: inline-block;
                 width: 100%;
             }
+
             .layered-visual {
                 margin-top: 20px;
             }
-            .layer-top, .layer-bottom {
+
+            .layer-top,
+            .layer-bottom {
                 transform: none !important;
                 margin-bottom: 20px;
             }
@@ -275,16 +296,19 @@
                 display: flex;
                 flex-direction: column;
             }
+
             .service-img-container {
                 height: 200px !important;
                 flex-shrink: 0;
             }
+
             .service-content-body {
                 height: auto !important;
                 padding: 20px 24px !important;
                 justify-content: flex-start !important;
                 text-align: left !important;
             }
+
             .service-card-premium .hover-overlay {
                 position: relative !important;
                 top: auto !important;
@@ -297,6 +321,7 @@
                 padding: 0 24px 24px 24px !important;
                 box-sizing: border-box !important;
             }
+
             .service-card-premium .hover-overlay p {
                 color: var(--text-dark) !important;
                 text-align: left !important;
@@ -308,13 +333,16 @@
             .essence-container h2 {
                 font-size: 2.2rem !important;
             }
-            .essence-grid-layout > div {
+
+            .essence-grid-layout>div {
                 height: auto !important;
             }
+
             .essence-concept-card {
                 height: auto !important;
                 padding: 30px 20px !important;
             }
+
             .essence-grid-layout h3 {
                 padding-left: 0 !important;
                 text-align: center !important;
@@ -564,7 +592,7 @@
             padding: 30px;
             border-radius: 16px;
             margin-top: 30px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.01);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.01);
             text-align: center;
             transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
         }
@@ -621,7 +649,8 @@
                     <li><a href="leadership-impact.html" class="active-link">LEADERSHIP IMPACT</a></li>
                     <li><a href="about.html">ABOUT US</a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle">INSIGHTS <i class="fa-solid fa-chevron-down" style="font-size: 0.75rem; margin-left: 4px; vertical-align: middle;"></i></a>
+                        <a href="#" class="dropdown-toggle">INSIGHTS <i class="fa-solid fa-chevron-down"
+                                style="font-size: 0.75rem; margin-left: 4px; vertical-align: middle;"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="blogs.html">BLOGS</a></li>
                             <li><a href="faq.html">FAQ</a></li>
@@ -639,8 +668,12 @@
     <!-- HERO -->
     <section class="service-hero animate-on-scroll">
         <div class="container text-center" style="max-width: 900px; position: relative; z-index: 2;">
-            <h1 style="color: #ffffff; font-size: 3.8rem; margin-bottom: 25px; line-height: 1.2; text-align: center;">Leadership capability for growth, transition, and scale.</h1>
-            <p style="color: #ffffff; font-size: 1.3rem; line-height: 1.6; opacity: 0.95; margin: 0 auto; text-align: center;">We help organisations build the leadership readiness, succession depth, and bench strength that long-term performance depends on.</p>
+            <h1 style="color: #ffffff; font-size: 3.8rem; margin-bottom: 25px; line-height: 1.2; text-align: center;">
+                Leadership capability for growth, transition, and scale.</h1>
+            <p
+                style="color: #ffffff; font-size: 1.3rem; line-height: 1.6; opacity: 0.95; margin: 0 auto; text-align: center;">
+                We help organisations build the leadership readiness, succession depth, and bench strength that
+                long-term performance depends on.</p>
         </div>
     </section>
 
@@ -649,10 +682,17 @@
         <div class="container">
             <div class="overview-grid">
                 <div>
-                    <span style="color: #BFB781; font-family: 'Inter', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; font-size: 0.95rem; display: block; margin-bottom: 12px; text-align: left;">OVERVIEW</span>
-                    <h2 class="section-title" style="font-size: 2.8rem; margin-bottom: 20px; text-align: left;">As a business scales, its leadership has to scale with it.</h2>
-                    <h3 style="color: var(--secondary-color); margin-bottom: 20px; font-weight: 500; font-size: 1.45rem; line-height: 1.5; text-align: left;">Growth places new demands on leaders and teams. The capability, succession depth, and alignment that worked at one size rarely carry unchanged to the next.</h3>
-                    <p style="font-size: 1.15rem; color: var(--text-dark); line-height: 1.7; margin: 0; font-weight: 600; text-align: left;">We assess and develop leaders against where the business is going, not where it has been.</p>
+                    <span
+                        style="color: #BFB781; font-family: 'Inter', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; font-size: 0.95rem; display: block; margin-bottom: 12px; text-align: left;">OVERVIEW</span>
+                    <h2 class="section-title" style="font-size: 2.8rem; margin-bottom: 20px; text-align: left;">As a
+                        business scales, its leadership has to scale with it.</h2>
+                    <h3
+                        style="color: var(--secondary-color); margin-bottom: 20px; font-weight: 500; font-size: 1.45rem; line-height: 1.5; text-align: left;">
+                        Growth places new demands on leaders and teams. The capability, succession depth, and alignment
+                        that worked at one size rarely carry unchanged to the next.</h3>
+                    <p
+                        style="font-size: 1.15rem; color: var(--text-dark); line-height: 1.7; margin: 0; font-weight: 600; text-align: left;">
+                        We assess and develop leaders against where the business is going, not where it has been.</p>
                 </div>
                 <div class="overview-img-wrapper animate-on-scroll">
                     <img src="images/leadership impact OVERVIEW img.jpeg" alt="Leadership Scale and Transition">
@@ -660,12 +700,14 @@
             </div>
         </div>
     </section>
- 
+
     <!-- SERVICES (THREE PREMIUM CARDS) -->
     <section style="background-color: #F8FAFC; padding: 45px 0;" class="animate-on-scroll">
         <div class="container" style="max-width: 1300px;">
             <div style="text-align: center; margin-bottom: 40px;" class="animate-on-scroll">
-                <h2 class="section-title text-center" style="font-size: 0.95rem; margin-bottom: 15px; margin-top: 0; font-weight: 800; color: #BFB781; font-family: 'Inter', sans-serif; text-transform: uppercase; letter-spacing: 2px;">What we deliver</h2>
+                <h2 class="section-title text-center"
+                    style="font-size: 0.95rem; margin-bottom: 15px; margin-top: 0; font-weight: 800; color: #BFB781; font-family: 'Inter', sans-serif; text-transform: uppercase; letter-spacing: 2px;">
+                    What we deliver</h2>
             </div>
 
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 40px;">
@@ -678,7 +720,9 @@
                         <h3>01. Leadership Assessment</h3>
                     </div>
                     <div class="hover-overlay">
-                        <p>A rigorous, role-anchored view of a leader’s potential, capability, and fit against what the role demands. Built for senior decisions where the stakes are highest: CEO succession, external hire validation, PE portfolio leadership, and critical-role appointments.</p>
+                        <p>A rigorous, role-anchored view of a leader’s potential, capability, and fit against what the
+                            role demands. Built for senior decisions where the stakes are highest: CEO succession,
+                            external hire validation, PE portfolio leadership, and critical-role appointments.</p>
                     </div>
                 </div>
 
@@ -691,7 +735,9 @@
                         <h3>02. Leadership Development & Coaching</h3>
                     </div>
                     <div class="hover-overlay">
-                        <p>Behaviour-focused development that shifts how leaders, managers, and functional teams operate day to day. Senior leadership programmes, manager acceleration, sales capability building, and executive coaching, anchored in strengths and reinforced beyond the workshop.</p>
+                        <p>Behaviour-focused development that shifts how leaders, managers, and functional teams operate
+                            day to day. Senior leadership programmes, manager acceleration, sales capability building,
+                            and executive coaching, anchored in strengths and reinforced beyond the workshop.</p>
                     </div>
                 </div>
 
@@ -704,7 +750,9 @@
                         <h3>03. Succession Planning</h3>
                     </div>
                     <div class="hover-overlay">
-                        <p>Structured planning for leadership transitions, building bench depth and continuity at the top. CEO and top-team succession, critical-role continuity, and the ongoing review architecture that keeps the plan live, not filed.</p>
+                        <p>Structured planning for leadership transitions, building bench depth and continuity at the
+                            top. CEO and top-team succession, critical-role continuity, and the ongoing review
+                            architecture that keeps the plan live, not filed.</p>
                     </div>
                 </div>
             </div>
@@ -715,42 +763,65 @@
     <section style="padding: 50px 0; background: #ffffff;" class="animate-on-scroll">
         <div class="container essence-container">
             <div style="text-align: center; max-width: 800px; margin: 0 auto 50px;">
-                <span style="color: var(--accent-gold); font-weight: 700; text-transform: uppercase; letter-spacing: 2px; font-size: 0.95rem; display: block; margin-bottom: 15px;">Leader Essence</span>
-                <h2 style="font-size: 3.2rem; font-weight: 800; color: var(--primary-color); margin: 0 0 8px 0; font-family: 'El Messiri', sans-serif;">The Leader Essence<sup>&copy;</sup> Method</h2>
-                <p style="color: var(--text-dark); opacity: 0.85; font-size: 1.25rem; line-height: 1.6; margin: 0; font-family: 'El Messiri', sans-serif;">A deeper read on whether a leader is right for what’s next.</p>
+                <span
+                    style="color: var(--accent-gold); font-weight: 700; text-transform: uppercase; letter-spacing: 2px; font-size: 0.95rem; display: block; margin-bottom: 15px;">Leader
+                    Essence</span>
+                <h2
+                    style="font-size: 3.2rem; font-weight: 800; color: var(--primary-color); margin: 0 0 8px 0; font-family: 'El Messiri', sans-serif;">
+                    The Leader Essence<sup>&copy;</sup> Method</h2>
+                <p
+                    style="color: var(--text-dark); opacity: 0.85; font-size: 1.25rem; line-height: 1.6; margin: 0; font-family: 'El Messiri', sans-serif;">
+                    A deeper read on whether a leader is right for what’s next.</p>
             </div>
 
             <div class="essence-grid-layout">
                 <!-- SVG Connections overlay -->
-                <svg id="essence-svg-connections" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1; overflow: visible;">
+                <svg id="essence-svg-connections"
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1; overflow: visible;">
                 </svg>
 
                 <!-- Left Column: Concept & Visual -->
                 <div style="height: 100%;">
                     <div class="essence-concept-card">
                         <div style="position: relative; z-index: 2; margin-bottom: 15px;">
-                            <p style="color: rgba(255, 255, 255, 0.95); font-size: 1.15rem; line-height: 1.7; margin: 0 0 15px 0; text-align: left;">DKOA’s proprietary leadership assessment and development methodology. Most assessments stop at what a leader has done.</p>
-                            <p style="color: rgba(255, 255, 255, 0.95); font-size: 1.15rem; line-height: 1.7; margin: 0; text-align: left;">Leader Essence reads that track record, and the layer beneath it: who the leader fundamentally is, and what that predicts about how they will perform as the role grows.</p>
+                            <p
+                                style="color: rgba(255, 255, 255, 0.95); font-size: 1.15rem; line-height: 1.7; margin: 0 0 15px 0; text-align: left;">
+                                DKOA’s proprietary leadership assessment and development methodology. Most assessments
+                                stop at what a leader has done.</p>
+                            <p
+                                style="color: rgba(255, 255, 255, 0.95); font-size: 1.15rem; line-height: 1.7; margin: 0; text-align: left;">
+                                Leader Essence reads that track record, and the layer beneath it: who the leader
+                                fundamentally is, and what that predicts about how they will perform as the role grows.
+                            </p>
                         </div>
-                        
+
                         <!-- Premium Interactive Depth Spectrum visual -->
                         <div class="depth-spectrum">
                             <!-- Traditional Focus -->
                             <div class="spectrum-layer essence-layer" style="text-align: center; padding: 15px;">
-                                <h4 class="layer-title" style="text-align: center; font-size: 1.25rem; margin-bottom: 6px; font-weight: 700; color: #ffffff;">Surface Track Record</h4>
-                                <p style="color: rgba(255, 255, 255, 0.75); font-size: 0.95rem; margin: 0; font-weight: 500;">What the leader has done</p>
+                                <h4 class="layer-title"
+                                    style="text-align: center; font-size: 1.25rem; margin-bottom: 6px; font-weight: 700; color: #ffffff;">
+                                    Surface Track Record</h4>
+                                <p
+                                    style="color: rgba(255, 255, 255, 0.75); font-size: 0.95rem; margin: 0; font-weight: 500;">
+                                    What the leader has done</p>
                             </div>
-                            
+
                             <!-- Connector/Arrow -->
                             <div class="spectrum-connector" style="padding: 2px 0;">
                                 <div class="connector-line"></div>
-                                <div class="connector-arrow" style="width: 32px; height: 32px; font-size: 0.85rem;"><i class="fa-solid fa-chevron-down"></i></div>
+                                <div class="connector-arrow" style="width: 32px; height: 32px; font-size: 0.85rem;"><i
+                                        class="fa-solid fa-chevron-down"></i></div>
                             </div>
 
                             <!-- The DKOA Difference -->
                             <div class="spectrum-layer essence-layer" style="text-align: center; padding: 18px;">
-                                <h4 class="layer-title gold-title" style="text-align: center; font-size: 1.4rem; margin-bottom: 8px; font-weight: 800; color: var(--accent-gold);">Core Essence</h4>
-                                <p style="color: #ffffff; font-size: 1.05rem; margin: 0; line-height: 1.5; font-weight: 500;">Who the leader is under pressure,<br>at scale, and in transition</p>
+                                <h4 class="layer-title gold-title"
+                                    style="text-align: center; font-size: 1.4rem; margin-bottom: 8px; font-weight: 800; color: var(--accent-gold);">
+                                    Core Essence</h4>
+                                <p
+                                    style="color: #ffffff; font-size: 1.05rem; margin: 0; line-height: 1.5; font-weight: 500;">
+                                    Who the leader is under pressure,<br>at scale, and in transition</p>
                             </div>
                         </div>
                     </div>
@@ -758,8 +829,10 @@
 
                 <!-- Right Column: What it looks at & What it delivers -->
                 <div>
-                    <h3 style="color: var(--primary-color); font-size: 1.6rem; margin: 0 0 25px 0; font-weight: 700; text-align: left; font-family: 'El Messiri', sans-serif; padding-left: 92px;">What it looks at</h3>
-                    
+                    <h3
+                        style="color: var(--primary-color); font-size: 1.6rem; margin: 0 0 25px 0; font-weight: 700; text-align: left; font-family: 'El Messiri', sans-serif; padding-left: 92px;">
+                        What it looks at</h3>
+
                     <div class="essence-measure-list">
                         <!-- Item 1 -->
                         <div class="essence-measure-item">
@@ -794,7 +867,9 @@
                         <!-- Item 4 -->
                         <div class="essence-measure-item">
                             <div class="essence-measure-icon">
-                                <img src="images/Their underlying values and belief system, and how those shape the way they lead..png" alt="Values and Beliefs Icon" style="width: 22px; height: 22px; object-fit: contain;">
+                                <img src="images/Their underlying values and belief system, and how those shape the way they lead..png"
+                                    alt="Values and Beliefs Icon"
+                                    style="width: 22px; height: 22px; object-fit: contain;">
                             </div>
                             <div class="essence-measure-content">
                                 <p>Their underlying values and belief system, and how those shape the way they lead.</p>
@@ -815,17 +890,33 @@
             </div>
 
             <!-- Hogan Assessments within Leader Essence -->
-            <div style="background: rgba(21, 50, 57, 0.04); border-left: 4px solid var(--accent-gold); border-radius: 12px; padding: 30px 40px; margin-top: 40px; margin-bottom: 30px; text-align: center; width: 100%; box-sizing: border-box;" class="animate-on-scroll">
-                <h4 style="font-size: 1.4rem; color: var(--primary-color); font-weight: 700; margin-top: 0; margin-bottom: 15px; font-family: 'El Messiri', sans-serif; text-align: center;">Hogan Assessments within Leader Essence<sup>&reg;</sup></h4>
-                <p style="color: var(--text-dark); font-size: 1.08rem; line-height: 1.7; margin-bottom: 12px; text-align: center; width: 100%; max-width: 100%; margin-left: auto; margin-right: auto;">Our Leader Essence<sup>&reg;</sup> method is anchored in an in-depth biographical interview that explores a leader’s experiences, choices, patterns and development over time. We triangulate these insights with Hogan Assessments and 360-degree references to build a robust, contextual view of leadership impact and readiness.</p>
-                <p style="color: var(--text-dark); font-size: 1.08rem; line-height: 1.7; margin: 0; text-align: center; width: 100%; max-width: 100%; margin-left: auto; margin-right: auto;">We also offer Hogan Assessments as a standalone solution for leadership selection and development.</p>
+            <div style="background: rgba(21, 50, 57, 0.04); border-left: 4px solid var(--accent-gold); border-radius: 12px; padding: 30px 40px; margin-top: 40px; margin-bottom: 30px; text-align: center; width: 100%; box-sizing: border-box;"
+                class="animate-on-scroll">
+                <h4
+                    style="font-size: 1.4rem; color: var(--primary-color); font-weight: 700; margin-top: 0; margin-bottom: 15px; font-family: 'El Messiri', sans-serif; text-align: center;">
+                    Hogan Assessments within Leader Essence<sup>&reg;</sup></h4>
+                <p
+                    style="color: var(--text-dark); font-size: 1.08rem; line-height: 1.7; margin-bottom: 12px; text-align: center; width: 100%; max-width: 100%; margin-left: auto; margin-right: auto;">
+                    Our Leader Essence<sup>&reg;</sup> method is anchored in an in-depth biographical interview that
+                    explores a leader’s experiences, choices, patterns and development over time. We triangulate these
+                    insights with Hogan Assessments and 360-degree references to build a robust, contextual view of
+                    leadership impact and readiness.</p>
+                <p
+                    style="color: var(--text-dark); font-size: 1.08rem; line-height: 1.7; margin: 0; text-align: center; width: 100%; max-width: 100%; margin-left: auto; margin-right: auto;">
+                    We also offer Hogan Assessments as a standalone solution for leadership selection and development.
+                </p>
             </div>
 
             <!-- What it delivers -->
             <div class="essence-delivery-card" style="margin-top: 40px;">
                 <h4><i class="fa-solid fa-award" style="color: var(--accent-gold);"></i> What it delivers</h4>
-                <p style="max-width: 850px; margin: 0 auto 15px auto; text-align: center;">A clear, evidence-based read on whether a leader is right for the role ahead: their strengths, their risks, and the development that will matter most. Confidence in hiring, promotion, succession, and transition decisions that carry real consequence.</p>
-                <p style="color: var(--secondary-color); font-size: 0.95rem; font-style: italic; margin: 0 auto; font-weight: 500; max-width: 850px; text-align: center;">Read within the realities of growth and complexity, not against a generic leadership model.</p>
+                <p style="max-width: 850px; margin: 0 auto 15px auto; text-align: center;">A clear, evidence-based read
+                    on whether a leader is right for the role ahead: their strengths, their risks, and the development
+                    that will matter most. Confidence in hiring, promotion, succession, and transition decisions that
+                    carry real consequence.</p>
+                <p
+                    style="color: var(--secondary-color); font-size: 0.95rem; font-style: italic; margin: 0 auto; font-weight: 500; max-width: 850px; text-align: center;">
+                    Read within the realities of growth and complexity, not against a generic leadership model.</p>
             </div>
         </div>
     </section>
@@ -875,59 +966,88 @@
     -->
 
     <!-- FINAL CTA -->
-    <section class="values animate-on-scroll" style="background: linear-gradient(135deg, rgba(21, 50, 57, 0.95), rgba(32, 70, 80, 0.95)), url('images/impact page Leadership the next stage can rely on.jpeg'); background-size: cover; background-position: center; background-attachment: fixed; padding: 45px 0;">
+    <section class="values animate-on-scroll"
+        style="background: linear-gradient(135deg, rgba(21, 50, 57, 0.95), rgba(32, 70, 80, 0.95)), url('images/impact page Leadership the next stage can rely on.jpeg'); background-size: cover; background-position: center; background-attachment: fixed; padding: 45px 0;">
         <div class="container text-center" style="max-width: 900px;">
-            <h2 class="section-title text-center" style="color: #ffffff; margin-bottom: 20px; font-size: 2.8rem; font-weight: 800;">Leadership the next stage can rely on.</h2>
-            <p style="color: #ffffff; max-width: 750px; margin: 0 auto 35px; text-align: center; font-size: 1.25rem; opacity: 0.95; line-height: 1.6;">Our work builds the leadership depth that execution, resilience, and long-term growth depend on.</p>
+            <h2 class="section-title text-center"
+                style="color: #ffffff; margin-bottom: 20px; font-size: 2.8rem; font-weight: 800;">Leadership the next
+                stage can rely on.</h2>
+            <p
+                style="color: #ffffff; max-width: 750px; margin: 0 auto 35px; text-align: center; font-size: 1.25rem; opacity: 0.95; line-height: 1.6;">
+                Our work builds the leadership depth that execution, resilience, and long-term growth depend on.</p>
             <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
-                <a href="contact.html" class="btn btn-primary" style="font-size: 1.15rem; padding: 15px 35px; border-radius: 50px; font-weight: 600; background-color: var(--accent-gold); color: var(--primary-color);">Schedule a Conversation <i class="fa-regular fa-calendar" style="margin-left: 8px;"></i></a>
+                <a href="contact.html" class="btn btn-primary"
+                    style="font-size: 1.15rem; padding: 15px 35px; border-radius: 50px; font-weight: 600; background-color: var(--accent-gold); color: var(--primary-color);">Schedule
+                    a Conversation <i class="fa-regular fa-calendar" style="margin-left: 8px;"></i></a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-        <!-- Footer -->
-        <footer>
+    <!-- Footer -->
+    <footer>
         <div class="container" style="max-width: 1200px;">
-            <div class="footer-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; padding: 40px 0 20px 0; border-bottom: none;">
+            <div class="footer-grid"
+                style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; padding: 40px 0 20px 0; border-bottom: none;">
                 <div class="footer-info">
-                    <h3 style="color: #ffffff; font-family: 'El Messiri', sans-serif; font-size: 1.6rem; font-weight: 700; margin-bottom: 25px;">Contact Us</h3>
-                    <ul class="contact-list" style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 20px;">
-                        <li style="display: flex; gap: 15px; align-items: center; color: rgba(255, 255, 255, 0.85); font-size: 1.05rem;">
-                            <i class="fa-solid fa-envelope" style="font-size: 1.15rem; color: #ffffff; width: auto;"></i>
-                            <a href="mailto:orgadvisors@dighekulkarni.com" style="color: rgba(255, 255, 255, 0.85); text-decoration: none;">orgadvisors@dighekulkarni.com</a>
+                    <h3
+                        style="color: #ffffff; font-family: 'El Messiri', sans-serif; font-size: 1.6rem; font-weight: 700; margin-bottom: 25px;">
+                        Contact Us</h3>
+                    <ul class="contact-list"
+                        style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 20px;">
+                        <li
+                            style="display: flex; gap: 15px; align-items: center; color: rgba(255, 255, 255, 0.85); font-size: 1.05rem;">
+                            <i class="fa-solid fa-envelope"
+                                style="font-size: 1.15rem; color: #ffffff; width: auto;"></i>
+                            <a href="mailto:orgadvisors@dighekulkarni.com"
+                                style="color: rgba(255, 255, 255, 0.85); text-decoration: none;">orgadvisors@dighekulkarni.com</a>
                         </li>
-                        <li style="display: flex; gap: 15px; align-items: center; color: rgba(255, 255, 255, 0.85); font-size: 1.05rem;">
+                        <li
+                            style="display: flex; gap: 15px; align-items: center; color: rgba(255, 255, 255, 0.85); font-size: 1.05rem;">
                             <i class="fa-solid fa-phone" style="font-size: 1.15rem; color: #ffffff; width: auto;"></i>
-                            <a href="tel:+919987535478" style="color: rgba(255, 255, 255, 0.85); text-decoration: none;">+91 9987535478</a>
+                            <a href="tel:+919987535478"
+                                style="color: rgba(255, 255, 255, 0.85); text-decoration: none;">+91 9987535478</a>
                         </li>
-                        <li style="display: flex; gap: 15px; align-items: center; color: rgba(255, 255, 255, 0.85); font-size: 1.05rem;">
-                            <i class="fa-brands fa-linkedin-in" style="font-size: 1.15rem; color: #ffffff; width: auto;"></i>
-                            <a href="https://www.linkedin.com/company/dighe-kulkarni-org-advisors" target="_blank" style="color: rgba(255, 255, 255, 0.85); text-decoration: none;">Dighe Kulkarni</a>
+                        <li
+                            style="display: flex; gap: 15px; align-items: center; color: rgba(255, 255, 255, 0.85); font-size: 1.05rem;">
+                            <i class="fa-brands fa-linkedin-in"
+                                style="font-size: 1.15rem; color: #ffffff; width: auto;"></i>
+                            <a href="https://www.linkedin.com/company/dighe-kulkarni-org-advisors" target="_blank"
+                                style="color: rgba(255, 255, 255, 0.85); text-decoration: none;">Dighe Kulkarni</a>
                         </li>
                     </ul>
                 </div>
                 <div class="footer-info">
-                    <h3 style="color: #ffffff; font-family: 'El Messiri', sans-serif; font-size: 1.6rem; font-weight: 700; margin-bottom: 25px;">Our Locations</h3>
-                    <ul class="contact-list" style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 20px;">
-                        <li style="display: flex; gap: 15px; align-items: flex-start; color: rgba(255, 255, 255, 0.85); font-size: 1.05rem; line-height: 1.5;">
-                            <i class="fa-solid fa-location-dot" style="font-size: 1.15rem; color: #ffffff; margin-top: 5px; width: auto;"></i>
+                    <h3
+                        style="color: #ffffff; font-family: 'El Messiri', sans-serif; font-size: 1.6rem; font-weight: 700; margin-bottom: 25px;">
+                        Our Locations</h3>
+                    <ul class="contact-list"
+                        style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 20px;">
+                        <li
+                            style="display: flex; gap: 15px; align-items: flex-start; color: rgba(255, 255, 255, 0.85); font-size: 1.05rem; line-height: 1.5;">
+                            <i class="fa-solid fa-location-dot"
+                                style="font-size: 1.15rem; color: #ffffff; margin-top: 5px; width: auto;"></i>
                             <div>
                                 <strong>Head Office:</strong><br>
-                                <span style="opacity: 0.9;">We Work, 13th Floor, 247 Park, Vikhroli West, Mumbai, 400079</span>
+                                <span style="opacity: 0.9;">We Work, 13th Floor, 247 Park, Vikhroli West, Mumbai,
+                                    400079</span>
                             </div>
                         </li>
-                        <li style="display: flex; gap: 15px; align-items: flex-start; color: rgba(255, 255, 255, 0.85); font-size: 1.05rem; line-height: 1.5;">
-                            <i class="fa-solid fa-location-dot" style="font-size: 1.15rem; color: #ffffff; margin-top: 5px; width: auto;"></i>
+                        <li
+                            style="display: flex; gap: 15px; align-items: flex-start; color: rgba(255, 255, 255, 0.85); font-size: 1.05rem; line-height: 1.5;">
+                            <i class="fa-solid fa-location-dot"
+                                style="font-size: 1.15rem; color: #ffffff; margin-top: 5px; width: auto;"></i>
                             <div>
                                 <strong>Singapore Office:</strong><br>
-                                <span style="opacity: 0.9;">10 Anson Road #19-09 International Plaza Singapore 079903</span>
+                                <span style="opacity: 0.9;">10 Anson Road #19-09 International Plaza Singapore
+                                    079903</span>
                             </div>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div style="border-top: 1px solid rgba(255, 255, 255, 0.1); padding: 20px 0; text-align: center; color: rgba(255, 255, 255, 0.6); font-size: 0.95rem;">
+            <div
+                style="border-top: 1px solid rgba(255, 255, 255, 0.1); padding: 20px 0; text-align: center; color: rgba(255, 255, 255, 0.6); font-size: 0.95rem;">
                 &copy; 2024 Dighe Kulkarni. All Rights Reserved.
             </div>
         </div>
@@ -935,43 +1055,43 @@
 
     <!-- JS -->
     <script src="script.js"></script>
-    
+
     <!-- Connection lines generator script -->
     <script>
         function drawConnectingLines() {
             const svg = document.getElementById('essence-svg-connections');
             if (!svg) return;
-            
+
             // Clear existing paths
             svg.innerHTML = '';
-            
+
             // Only draw on desktop (grid layout)
             if (window.innerWidth <= 1024) return;
-            
+
             const container = document.querySelector('.essence-grid-layout');
             const startEl = document.querySelectorAll('.essence-layer')[1];
             const endEls = document.querySelectorAll('.essence-measure-item');
-            
+
             if (!container || !startEl || endEls.length === 0) return;
-            
+
             const containerRect = container.getBoundingClientRect();
             const startRect = startEl.getBoundingClientRect();
-            
+
             // Start point: Center right of the Core Essence card
             const startX = startRect.right - containerRect.left;
             const startY = (startRect.top + startRect.bottom) / 2 - containerRect.top;
-            
+
             endEls.forEach((el, index) => {
                 const icon = el.querySelector('.essence-measure-icon');
                 const targetRect = (icon || el).getBoundingClientRect();
-                
+
                 // Target point: Center left of the icon
                 const targetX = targetRect.left - containerRect.left;
                 const targetY = (targetRect.top + targetRect.bottom) / 2 - containerRect.top;
-                
+
                 // Draw orthogonal branch lines (fork structure)
                 const trunkX = startX + (targetX - startX) * 0.45;
-                
+
                 const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
                 path.setAttribute('d', `M ${startX} ${startY} L ${trunkX} ${startY} L ${trunkX} ${targetY} L ${targetX} ${targetY}`);
                 path.setAttribute('stroke', 'var(--accent-gold)');
@@ -979,9 +1099,9 @@
                 path.setAttribute('fill', 'none');
                 path.setAttribute('opacity', '0.75');
                 path.style.transition = 'all 0.3s ease';
-                
+
                 svg.appendChild(path);
-                
+
                 // Add hover triggers to items
                 el.addEventListener('mouseenter', () => {
                     path.setAttribute('stroke-width', '2.2');
@@ -999,11 +1119,11 @@
         // Run on load, resize and interaction
         window.addEventListener('load', drawConnectingLines);
         window.addEventListener('resize', drawConnectingLines);
-        
+
         // Also run after a short timeout to ensure fonts/layouts are fully ready
         setTimeout(drawConnectingLines, 300);
         setTimeout(drawConnectingLines, 1000);
-        
+
         // Listen to scroll to update positions if elements animate in
         window.addEventListener('scroll', drawConnectingLines, { passive: true });
     </script>
